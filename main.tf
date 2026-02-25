@@ -72,6 +72,7 @@ module "blog_alb" {
     Environment = "Dev"
   }
 }
+}
 
 resource "aws_lb_target_group" "blog" {
   name     = "blog"
