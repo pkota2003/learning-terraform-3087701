@@ -18,7 +18,6 @@ data "aws_vpc" "default" {
   default = true
 }
 
-
 module "blog_vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
