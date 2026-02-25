@@ -15,13 +15,10 @@ variable "instance_type" {
 
   default =  {
     name   = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
-    owners= "979382823631" # Bitnami
+    owner = "979382823631" # Bitnami
   }
 }
 
-data "aws_vpc" "default" {
-  default = true
-}
 
 
 
