@@ -10,7 +10,7 @@ variable "instance_type" {
     description = "Name of the filter and owner for AMI"
     type = object ({
        name   = string
-       values = string
+       owner = string
   })
 
   default =  {
@@ -34,8 +34,7 @@ variable "Environment" {
   }
 }
 
-variable "network_prefix"
- cidr = "10.0.0.0/16"
+
 
 
 variable "min_size"{
