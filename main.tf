@@ -11,7 +11,8 @@ data "aws_ami" "app_ami" {
     values = ["hvm"]
   }
 
-  owners = [var.app_ami.owner] # Bitnami
+  owners = [var.ami_filter.owner] # Bitnami
+
 }
 
 
